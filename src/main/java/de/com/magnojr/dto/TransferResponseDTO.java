@@ -15,9 +15,9 @@ import java.util.UUID;
 @NoArgsConstructor
 public class TransferResponseDTO {
 
-	private UUID fromAccount;
-	private UUID toAccount;
-	private BigDecimal value;
-	private LocalDateTime dateTime;
+    private UUID fromAccount;
+    private UUID toAccount;
+    private BigDecimal value;
+    private LocalDateTime dateTime;
 
 }

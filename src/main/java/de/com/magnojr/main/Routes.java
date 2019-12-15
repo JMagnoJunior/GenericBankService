@@ -4,10 +4,10 @@ import de.com.magnojr.controllers.AccountController;
 import de.com.magnojr.controllers.TransferController;
 import io.javalin.Javalin;
 
-public class Routes {
+class Routes {
 
 
-    public static void mapRoutes(Javalin app) {
+    static void mapRoutes(Javalin app) {
 
         TransferController transferController = new TransferController(GenericBankService.transferService);
         AccountController accountController = new AccountController(GenericBankService.accountService);
@@ -17,6 +17,6 @@ public class Routes {
 
         app.get(AccountController.PATH, accountController::list);
         app.get(AccountController.PATH + "/:accountId", accountController::get);
-        app.post(AccountController.PATH , accountController::create);
+        app.post(AccountController.PATH, accountController::create);
     }
 }
