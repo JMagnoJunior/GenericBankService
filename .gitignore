@@ -1,0 +1,10 @@
+.classpath
+.project
+*.iml
+.settings/
+.idea/
+target/
+build/
+logs/
+
+/docker-compose.yml
